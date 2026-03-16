@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>PowerCoder-Z Atlantean GUI</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+<header class="topbar">
+<h1>PowerCoder-Z Atlantean Interface</h1>
+</header>
+
+<div class="workspace">
+
+<!-- Prompt Panel -->
+<div class="panel prompt-panel">
+
+<h2>Prompt</h2>
+
+<textarea id="promptBox" placeholder="Enter problem or code..."></textarea>
+
+<button id="runBtn">Run Inference</button>
+
+</div>
+
+<!-- Field Visualization -->
+<div class="panel field-panel">
+
+<h2>Thought Field Visualization</h2>
+
+<canvas id="fieldCanvas"></canvas>
+
+</div>
+
+<!-- Output Panel -->
+<div class="panel output-panel">
+
+<h2>Output</h2>
+
+<pre id="outputBox">Awaiting input...</pre>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>

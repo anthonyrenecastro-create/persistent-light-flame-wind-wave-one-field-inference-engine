@@ -1,0 +1,4 @@
+# Node.js / Electron
+electron/node_modules/
+electron/dist/
+*.log

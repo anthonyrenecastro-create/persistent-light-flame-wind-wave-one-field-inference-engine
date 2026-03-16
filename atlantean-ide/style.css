@@ -1,0 +1,58 @@
+body{
+  margin:0;
+  background:#0f0f0f;
+  color:#e0e0e0;
+  font-family:monospace;
+  overflow:hidden;
+}
+
+#topbar{
+  height:40px;
+  background:#1c1c1c;
+  padding:10px;
+  border-bottom:1px solid #333;
+}
+
+#workspace{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 200px;
+  height:calc(100vh - 40px);
+  gap:8px;
+  padding:8px;
+}
+
+.panel{
+  background:#181818;
+  border:1px solid #333;
+  position:relative;
+  resize:both;
+  overflow:hidden;
+}
+
+.panel-header{
+  background:#222;
+  padding:6px;
+  cursor:move;
+  border-bottom:1px solid #333;
+}
+
+#editorBox{
+  width:100%;
+  height:calc(100% - 30px);
+  background:#111;
+  color:#ddd;
+  border:none;
+  padding:10px;
+  resize:none;
+}
+
+#consoleText{
+  padding:10px;
+}
+
+canvas{
+  width:100%;
+  height:calc(100% - 30px);
+  display:block;
+}

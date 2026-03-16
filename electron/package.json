@@ -1,0 +1,30 @@
+{
+  "name": "atlantean-electron-app",
+  "version": "1.0.0",
+  "description": "Minimal Electron UI for Atlantean Field Inference Engine",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "server": "node server.js",
+    "build": "electron-builder",
+    "dist": "electron-builder --publish=never"
+  },
+  "devDependencies": {
+    "electron": "^41.0.2",
+    "electron-builder": "^26.8.1"
+  },
+  "build": {
+    "appId": "com.atlantean.inference",
+    "productName": "Atlantean Inference",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "**/*",
+      "!dist/**/*"
+    ]
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}

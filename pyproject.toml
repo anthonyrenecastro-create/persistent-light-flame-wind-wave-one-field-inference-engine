@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "persistent-light-flame-inference-engine"
+version = "0.1.0"
+description = "Lean neural-field inference engine with desktop prompt UI."
+authors = [
+  {name = "unknown"}
+]
+
+[project.dependencies]
+torch = "*"
+numpy = "*"
+matplotlib = "*"

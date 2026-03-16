@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Atlantean IDE</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="topbar">
+  Atlantean Neural Field IDE
+</div>
+
+<div id="workspace">
+
+  <div class="panel" id="editor">
+    <div class="panel-header">Prompt / Code</div>
+    <textarea id="editorBox"></textarea>
+  </div>
+
+  <div class="panel" id="field">
+    <div class="panel-header">Field Simulation</div>
+    <canvas id="glCanvas"></canvas>
+  </div>
+
+  <div class="panel" id="console">
+    <div class="panel-header">Console</div>
+    <pre id="consoleText">System ready.</pre>
+  </div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
